@@ -24,6 +24,7 @@ $("#buttonCont").on("click", function()
 $("#zerar").on("click", function()
 
 {
+  sound = new Audio ("sons/soma.mp3");
   contador = 0;
   operacao = 1*1;
   $("#buttonCont > h1").text(contador);
