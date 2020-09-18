@@ -14,7 +14,7 @@ $("#buttonCont").on("click", function()
 
   sound.play();
 
-  $(this).addClass("pressed").delay(300).queue(function(next) {$(this).removeClass("pressed"); next(); });
+  $(this).addClass("pressed").delay(100).queue(function(next) {$(this).removeClass("pressed"); next(); });
   contador = contador + operacao;
   $("#buttonCont > h1").text(contador);
 
