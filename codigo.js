@@ -50,7 +50,7 @@ $("#subtrair").on("click", function()
 
 let deferredPrompt;
 const addBtn = document.querySelector('#atalho');
-addBtn.style.display = 'none';
+
 
 
 window.addEventListener('beforeinstallprompt', (e) => {
