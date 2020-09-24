@@ -1,6 +1,8 @@
 
 
-var pergunta =prompt("A paz do Senhor Jesus! Você deseja iniciar a contagem a partir de qual número ?");
+var pergunta = 0;
+
+//prompt("A paz do Senhor Jesus! Você deseja iniciar a contagem a partir de qual número ?");
 var contador = 1*pergunta;
 
 var operacao = 1*1;
