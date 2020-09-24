@@ -31,6 +31,8 @@ $("#zerar").on("click", function()
 });
 
 
+
+
 $("#somar").on("click", function()
 
 {
@@ -43,4 +45,16 @@ $("#subtrair").on("click", function()
 {
   sound = new Audio ("sons/sub.mp3");
   operacao = (-1)*1;
+});
+
+
+
+window.addEventListener("beforeinstallprompt", ev => { 
+  // Stop Chrome from asking _now_
+  ev.preventDefault();
+
+  // Create your custom "add to home screen" button here if needed.
+  // Keep in mind that this event may be called multiple times, 
+  // so avoid creating multiple buttons!
+  document.getElementById("atalho").onclick = () => ev.prompt();
 });
